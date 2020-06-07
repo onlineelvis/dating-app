@@ -21,6 +21,7 @@ My experimental dating app. With filters, like/dislike/match system, gallery mul
 3.Then do a composer install and npm install-
 
 > composer install
+>
 > npm install
 
 4.Then create a environment file using this command-
@@ -30,6 +31,7 @@ My experimental dating app. With filters, like/dislike/match system, gallery mul
 5. Generate key and link storage
 
 > php artisan key:generate
+>
 > php artisan storage:link
 
 6.migrate DB (make sure you have connected to your db in .env file)
