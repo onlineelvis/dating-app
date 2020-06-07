@@ -109,7 +109,7 @@ class User extends Authenticatable
             return '/storage/'.$this->picture;
         }
         else {
-            return '/storage/pictures/default.png';
+            return 'default.png';
         }
 
    }

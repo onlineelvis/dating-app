@@ -18,16 +18,18 @@ My experimental dating app. With filters, like/dislike/match system, gallery mul
 
 > cd datingApp
 
-3.Then do a composer install-
+3.Then do a composer install and npm install-
 
 > composer install
+> npm install
 
 4.Then create a environment file using this command-
 
 > cp .env.example .env
 
-5.link storage
+5. Generate key and link storage
 
+> php artisan key:generate
 > php artisan storage:link
 
 6.migrate DB (make sure you have connected to your db in .env file)
@@ -36,7 +38,10 @@ My experimental dating app. With filters, like/dislike/match system, gallery mul
 
 7.Third party source mailtrap.
 
-> set mailtrap in .env
+    7.1. go into .env file
+    7.2. set mail_username
+    7.3. set mail_password
+    7.4. set mail_from_adress
 
 8.Faker and seeder. (optional) To test dating app seeds logic is written.
 
@@ -48,5 +53,5 @@ My experimental dating app. With filters, like/dislike/match system, gallery mul
 
 ## Optional 
 
-In this project in addition possible to add modal window pop out with button delete.
+In this project in addition possible to add some modal window pop ups.
 
